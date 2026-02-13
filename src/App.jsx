@@ -1,11 +1,12 @@
 const App = () => {
-  const fruitlist = ['apple', 'banana', 'cherry'];
+  const vehicles = ['mustang' , 'f-150', 'expedition'];
+
+  const [car, truck, suv] = vehicles;
+
   return (
-    <ul>
-      {fruitlist.map(fruit => 
-        <li key = {fruit}>{fruit}</li>
-      )}
-    </ul>
+    <>
+    {truck}
+    </>
   );
 }
 
