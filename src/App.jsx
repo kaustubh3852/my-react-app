@@ -1,11 +1,16 @@
 const App = () => {
-  const vehicles = ['mustang' , 'f-150', 'expedition'];
-
-  const [car, truck, suv] = vehicles;
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+  };
+  const {firstName, lastName, age} = person;
 
   return (
     <>
-    {truck}
+    
+    {firstName}
+
     </>
   );
 }
