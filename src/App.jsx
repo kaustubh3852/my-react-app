@@ -1,16 +1,17 @@
 const App = () => {
-  const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30
+  const dateInfo = (dat) => {
+    const d = dat.getDate();
+    const m = dat.getMonth();
+    const y = dat.getYear();
+
+    return [d, m, y];
   };
-  const {firstName, lastName, age} = person;
+
+  const [date, month, year]  = dateInfo(new Date());
 
   return (
     <>
-    
-    {firstName}
-
+    The year is {year}
     </>
   );
 }
