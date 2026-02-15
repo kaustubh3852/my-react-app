@@ -3,15 +3,16 @@ const App = () => {
     firstName: "John",
     lastName: "Doe",
     age: 30
-  }
+  };
 
-  const {firstName, lastName, age, country = "Norway"} = person;
+  const {firstName, lastName, age} = person;
 
   return (
     <>
-    {country}
+    {firstName}
     </>
   );
+
 }
 
 export default App;
