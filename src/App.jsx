@@ -1,21 +1,13 @@
 const App = () => {
-  const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30,
-    car: {
-      brand: "Ford",
-      model: "Mustang",
-    }
+  let greeting = (name, age) => {
+    return `Hello ${name}! You are ${age} years old`;
   };
-
-  const {firstName, car: {brand, model}} = person;
 
   return (
     <>
-    My name is {firstName} and I drive a {brand} {model};
-    </>
+    {greeting("John", 30)}
+   </>
   );
 }
 
-export default App;
+export default App; 
