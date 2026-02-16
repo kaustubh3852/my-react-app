@@ -1,13 +1,11 @@
+import Greetings from './Greetings';
 const App = () => {
-  let greeting = (name, age) => {
-    return `Hello ${name}! You are ${age} years old`;
-  };
-
   return (
     <>
-    {greeting("John", 30)}
-   </>
+    <Greetings name = "Alice" age = {30}/>
+    <Greetings name = "Bob" age = {30}/>
+    </>
   );
 }
 
-export default App; 
+export default App;
