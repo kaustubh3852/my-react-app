@@ -1,11 +1,10 @@
-import Greetings from './Greetings';
 const App = () => {
-  return (
-    <>
-    <Greetings name = "Alice" age = {30}/>
-    <Greetings name = "Bob" age = {30}/>
-    </>
-  );
-}
+  const authenticated = true;
 
+  if (authenticated) {
+    return <h1>Welcome</h1> 
+  } else {
+    return <h1>Please log in</h1>
+  }
+};
 export default App;
