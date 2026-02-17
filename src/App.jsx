@@ -1,9 +1,17 @@
 const App = () => {
-  const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
+  const myElement = () => {
+    return (
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+      </ul>
+    );
+  };
 
   return (
     <>
-    {myElement}
+    {myElement()}
     </>
   );
 }
