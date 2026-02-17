@@ -1,13 +1,10 @@
 const App = () => {
-  const items = ['apple', 'banana', 'cherry'];
-  const list = `You have ${items.length} items:
-${items.join("\n")}`;
-
+  const myElement = <h1>I love JSX</h1>;
 
   return (
-    <pre>
-    {list}
-    </pre>
+    <>
+    {myElement}
+    </>
   );
 }
 
