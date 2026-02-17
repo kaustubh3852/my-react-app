@@ -1,17 +1,8 @@
 const App = () => {
-  const myElement = () => {
-    return (
-      <ul>
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Cherries</li>
-      </ul>
-    );
-  };
-
+  const myElement  = <h1 className="myclass">Hello World</h1>;
   return (
     <>
-    {myElement()}
+    {myElement}
     </>
   );
 }
