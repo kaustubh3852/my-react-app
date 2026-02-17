@@ -1,5 +1,5 @@
 const App = () => {
-  const myElement = <h1>I love JSX</h1>;
+  const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
 
   return (
     <>
