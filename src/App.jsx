@@ -1,10 +1,14 @@
+import './App.css';
+
 const App = () => {
-  const myElement  = <h1 className="myclass">Hello World</h1>;
+  const x = 5;
   return (
     <>
-    {myElement}
+    <h1>{(x) < 10 ? "Banana" : "Apple"}</h1>
     </>
   );
 }
 
 export default App;
+
+
