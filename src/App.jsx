@@ -1,14 +1,15 @@
-import './App.css';
+import Car from './Car';
+import Garage from './Garage';
 
 const App = () => {
-  const x = 5;
-  return (
+  return(
     <>
-    <h1>{(x) < 10 ? "Banana" : "Apple"}</h1>
+    <Garage/>
+    <Car brand="BMW"/>
+    <Garage/>
+    <Car brand="Ford"/>
     </>
   );
 }
 
 export default App;
-
-
