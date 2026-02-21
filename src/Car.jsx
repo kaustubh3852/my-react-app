@@ -1,8 +1,8 @@
-const Car = (props) => {
+const Car = ({color="blue", brand}) => {
     return (
-        <h2>I am {props.brand}</h2>
+        <>
+        <h2>My {color} {brand}</h2>
+        </>
     );
-
-};
-
+}
 export default Car;

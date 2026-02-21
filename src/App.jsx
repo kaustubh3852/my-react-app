@@ -1,15 +1,12 @@
-import Car from './Car';
-import Garage from './Garage';
+// import Car from './Car';
+// import Garage from './Garage';
+import Son from './Son';
+import Daughter from './Daughter';
+import Parent from './Parent';
 
 const App = () => {
-  return(
-    <>
-    <Garage/>
-    <Car brand="BMW"/>
-    <Garage/>
-    <Car brand="Ford"/>
-    </>
+  return (
+    <Parent/>
   );
 }
-
-export default App;
+export default Parent;
