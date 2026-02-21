@@ -1,10 +1,9 @@
-import Football from "./Football";
+import Goal from "./Goal";
 const App = () => {
     return (
         <>
-        <Football/>
+        <Goal isGoal={false}/>
         </>
     );
 }
-
 export default App;
