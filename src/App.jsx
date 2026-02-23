@@ -1,8 +1,9 @@
-import Car from './Car';
+
+import Form from './Form';
 const App = () => {
     return (
         <>
-        <Car/>
+        <Form/>
         </>
     );
 }
