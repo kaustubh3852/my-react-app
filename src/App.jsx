@@ -1,8 +1,8 @@
-import Goal from "./Goal";
+import Car from './Car';
 const App = () => {
     return (
         <>
-        <Goal isGoal={false}/>
+        <Car brand="Ford"/>
         </>
     );
 }

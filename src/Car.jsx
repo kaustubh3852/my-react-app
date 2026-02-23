@@ -1,7 +1,7 @@
-const Car = ({color="blue", brand}) => {
+const Car = (props) => {
     return (
         <>
-        <h2>My {color} {brand}</h2>
+        {props.brand && <h1>My car is {props.brand}</h1>}
         </>
     );
 }
