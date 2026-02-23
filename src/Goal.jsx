@@ -4,8 +4,8 @@ const Goal = (props) => {
     const isGoal = props.isGoal;
     return (
         <>
-        {isGoal ? <MadeGoal/> : <MissedGoal/>}
+        {isGoal ? <MadeGoal/> : <MissedGoal/>};
         </>
     );
-};
+}
 export default Goal;

@@ -1,7 +1,11 @@
-const Car = (props) => {
+const Car = () => {
+    const car = ['Ford', 'BMW', 'Audi'];
     return (
         <>
-        {props.brand && <h1>My car is {props.brand}</h1>}
+        <h1>My Cars</h1>
+        <ul>
+           {car.map((car, index) => <li key = {index}>I am { car }</li>)}
+        </ul>
         </>
     );
 }
