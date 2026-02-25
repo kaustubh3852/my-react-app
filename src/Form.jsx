@@ -1,25 +1,19 @@
-import {useState} from 'react';
+import { useState } from 'react';
 const Form = () => {
-    const [name, setName] = useState("");
-
-    function handlechange(e) {
-        setName(e.target.value);
+    const [myCar, setMyCar] = useState("Volvo");
+    const handleChange = (e) => {
+        setMyCar(e.target.value)
     }
-
-    function handlesubmit(e) {
-        e.preventDefault();
-        alert(name);
-    }
-
     return (
         <>
-        <form onSubmit={handlesubmit}>
-            <label>Enter your name: </label>
-            <input type="text" value={name} onChange={handlechange} />
-            <input type="submit" />
+        <form>
+            <select value={myCar} onChange={handleChange}>
+                <option value="Ford">Ford</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Fiat">Fiat</option>
+            </select>
         </form>
         </>
     );
 }
-
 export default Form;
