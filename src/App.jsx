@@ -1,10 +1,10 @@
-
 import Form from './Form';
 const App = () => {
-    return (
+    return(
         <>
         <Form/>
         </>
     );
 }
+
 export default App;
