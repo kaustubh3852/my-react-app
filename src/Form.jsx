@@ -1,31 +1,17 @@
 import {useState} from 'react';
 const Form = () => {
-    const [name, setName] = useState("");
-
-    function handleChange(e)  {
-        setName(e.target.value);
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        alert(name);
-    };
+    const [name, setname] = useState("");
 
     return (
+        <form>
+            <label>Enter your Name: </label>
+            <input type="text"
+            value={name}
+            onChange={(e) => setname(e.target.value)} />
 
-   
-
-    <form onSubmit={handleSubmit}>
-        <label>Enter your name: </label>
-        <input type="text"
-        value={name} 
-        onChange={handleChange}/>
-
-        <input type="submit" />
-
-    </form>
-
-     );
+            <p>Current Value: {name}</p>
+        </form>
+    );
 }
 
 export default Form;
